@@ -79,26 +79,23 @@ main{
     overflow-x: hidden;
 }
 
-/* section 1 */
-.sec-main{
+
+/* common properties in all sections */
+.section{
     height: 93vh;
-    width: 100vw;
     background-size: 580px;
-    background-image: url("image1.png");
-    background-position:right;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
 }
 
-main .left{
-    width: 40%;
-    height: 70%;
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
+
+/* section 1 */
+.sec-main{
+    width: 100vw;
+    background-image: url("image1.png");
+    background-position:right;
+    
 }
 
 .sec-main .left h2{
@@ -111,22 +108,14 @@ main .left{
     background-color: white;
 }
 
-/* .sec-main-buttons:first-of-type{
-    background-color: black;
-} */
-
 
 /* section 2 */
 .sec-2{
-    height: 93vh;
     width: 80vw;
-    background-size: 580px;
     background-image: url("image1.png");
     background-position:right 10%;
-    background-repeat: no-repeat;
-    display: flex;
     gap: 20px;
-    align-items: center;
+    
 }
 
 .sec-2 .boxes{
@@ -135,6 +124,23 @@ main .left{
     justify-content: space-between;
 
 }
+
+
+/* common properties for left content in section 1 and section 2 */
+main .left{
+    width: 40%;
+    height: 70%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+
+
+/* common properties for right content in remaning sections */
+
+
 
 
 
@@ -184,14 +190,17 @@ main .left{
 
     /* for body */
 
-    .sec-main,.sec-2{
+    .sec-main, .sec-2{
         display: flex;
         align-items: flex-start;
         background-size: 500px;
         background-position: top;
         height: 120vh;
     }
-    
+    .sec-2{
+        width: 100vw;
+        
+    }
     .sec-main .left{
         padding-top: 800px;
         width: 100vw;
