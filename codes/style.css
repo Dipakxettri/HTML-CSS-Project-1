@@ -111,10 +111,14 @@ main{
 
 /* section 2 */
 .sec-2{
-    width: 80vw;
     background-image: url("image1.png");
-    background-position:right 10%;
+    width: 92vw;
+    background-position:right 20%;
     gap: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: blue; */
     
 }
 
@@ -138,13 +142,58 @@ main .left{
 }
 
 
-/* common properties for right content in remaning sections */
 
 
+/* common properties for right content in section 3,4,5,6 */
+main .right{
+    width: 40%;
+    height: 70%;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
 
 
+/* section 3 */
+.sec-3{
+    background-image: url("image2.png");
+    
+}
 
 
+/* section 4 */
+.sec-4{
+    background-image: url("image4.png");
+}
+
+
+/* section 5 */
+.sec-5{
+    background-image: url(image3.png);
+}
+
+.sec-5 button{
+    height: 30px;
+    border: none;
+    color: white;
+    width: 120px;
+    background-color: #111B47;
+}
+
+
+/* common properties in section 3,4,5 */
+.sec-3, .sec-4, .sec-5{
+    width: 88vw;
+   margin-left: 60px;
+    background-position-y: center;
+    gap: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    /* background-color: red; */
+}
 
 
 /* Responsive Design */
@@ -190,24 +239,29 @@ main .left{
 
     /* for body */
 
-    .sec-main, .sec-2{
+    .sec-main, .sec-2, .sec-3, .sec-4, .sec5{
         display: flex;
         align-items: flex-start;
         background-size: 500px;
         background-position: top;
         height: 120vh;
     }
+
+    .sec-3, .sec-4, .sec-5{
+        background-size: 450px;
+    }
     .sec-2{
         width: 100vw;
         
     }
-    .sec-main .left{
+
+    .section .left{
         padding-top: 800px;
         width: 100vw;
         margin: 0px 20px;
     }
 
-    .sec-2 .left{
+    .section .right{
         padding-top: 800px;
         width: 100vw;
         margin: 0px 20px;
@@ -217,6 +271,5 @@ main .left{
         display: flex;
         justify-content: center;
         gap: 20px;
-        
     }
 }
