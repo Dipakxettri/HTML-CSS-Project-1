@@ -183,6 +183,48 @@ main .right{
 }
 
 
+/* section 6 */
+.sec-6{
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec-6 .content{
+    height: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.sec-6 h3{
+    font-size: 3em;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#price{
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.sec-6 button{
+    height: 30px;
+    width: 100px;
+    background-color: #0056b3;
+    border: none;
+    color: white;
+}
+
 /* common properties in section 3,4,5 */
 .sec-3, .sec-4, .sec-5{
     width: 88vw;
@@ -194,6 +236,8 @@ main .right{
     align-items: center; 
     /* background-color: red; */
 }
+
+
 
 
 /* Responsive Design */
