@@ -282,20 +282,21 @@ main .right{
 
 
     /* for body */
-
-    .sec-main, .sec-2, .sec-3, .sec-4, .sec5{
+    .sec-main, .sec-2{
         display: flex;
         align-items: flex-start;
         background-size: 500px;
         background-position: top;
-        height: 120vh;
+        height: 180vh;
     }
 
     .sec-3, .sec-4, .sec-5{
         background-size: 450px;
     }
+
     .sec-2{
         width: 100vw;
+        height: 140vh;
         
     }
 
@@ -315,5 +316,23 @@ main .right{
         display: flex;
         justify-content: center;
         gap: 20px;
+    }
+    .sec-main{
+        height: 140vh;
+    }
+
+    .sec-3{
+        height: 120vh;
+    }
+    .sec-4{
+        height: 70vh;
+    }
+
+    .sec-5{
+        height: 190vh;
+    }
+
+    .sec-6{
+        height: 70vh;
     }
 }
