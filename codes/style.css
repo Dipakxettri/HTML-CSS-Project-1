@@ -23,8 +23,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-   
-    
 }
 
 .left-nav {
@@ -37,12 +35,12 @@ header {
 .nav-items {
     display: flex;
     gap: 20px;
-    list-style: none;  /* Removes bullet points */
+    list-style: none;  
 }
 
 .nav-items li {
     
-    display: inline; /* Ensures each list item is inline */
+    display: inline; /* each list item is inline */
 }
 
 .nav-items a {
@@ -106,6 +104,11 @@ main{
     width: 120px;
     height: 30px;
     background-color: white;
+}
+
+.sec-main-buttons .btn-1{
+    background-color: #0A1633;
+    color: white;
 }
 
 
@@ -185,7 +188,7 @@ main .right{
 
 /* section 6 */
 .sec-6{
-    height: 100vh;
+    height: 80vh;
     background-color: rgb(235, 235, 235);
     display: flex;
     flex-direction: column;
@@ -287,16 +290,17 @@ main .right{
         align-items: flex-start;
         background-size: 500px;
         background-position: top;
-        height: 180vh;
+        height: 100vh;
     }
 
     .sec-3, .sec-4, .sec-5{
         background-size: 450px;
+        height: 100vh;
     }
 
     .sec-2{
         width: 100vw;
-        height: 140vh;
+        height: 100vh;
         
     }
 
@@ -335,4 +339,75 @@ main .right{
     .sec-6{
         height: 70vh;
     }
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: #E8ECF5;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+    color: #555;
+}
+
+.footer-content nav a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-content nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.purchase-btn {
+    background-color: #0A1633;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.purchase-btn:hover {
+    background-color: #1c2a4d;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
 }
